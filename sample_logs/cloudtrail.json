@@ -1,0 +1,2 @@
+{"eventTime":"2026-09-26T10:21:10Z","eventName":"ConsoleLogin","sourceIPAddress":"203.0.113.50","awsRegion":"ap-south-1","userIdentity":{"type":"IAMUser","userName":"demo-user"},"eventSource":"signin.amazonaws.com"}
+{"eventTime":"2026-09-26T10:22:10Z","eventName":"DeleteBucket","sourceIPAddress":"203.0.113.50","awsRegion":"ap-south-1","userIdentity":{"type":"IAMUser","arn":"arn:aws:iam::123:user/demo-user"},"eventSource":"s3.amazonaws.com","errorCode":"AccessDenied"}

@@ -1,0 +1,6 @@
+source: nginx
+fields:
+  ip: source_ip
+  timestamp: timestamp
+  method: action
+  status: outcome

@@ -1,0 +1,2 @@
+Sep 26 10:20:01 %ASA-6-302013: Built inbound TCP connection 123 for inside:192.168.1.10/51522 to outside:203.0.113.10/443
+Sep 26 10:20:05 %ASA-4-106023: Deny tcp src inside:10.0.0.8/4444 dst outside:198.51.100.20/22 by access-group

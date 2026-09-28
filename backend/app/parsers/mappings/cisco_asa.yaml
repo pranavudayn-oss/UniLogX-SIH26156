@@ -1,0 +1,6 @@
+source: cisco_asa
+fields:
+  src: source_ip
+  dst: destination_ip
+  srcport: source_port
+  dstport: destination_port

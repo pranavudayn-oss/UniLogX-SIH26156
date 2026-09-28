@@ -1,0 +1,7 @@
+source: generic_kv
+fields:
+  src: source_ip
+  dst: destination_ip
+  src_port: source_port
+  dst_port: destination_port
+  msg: message

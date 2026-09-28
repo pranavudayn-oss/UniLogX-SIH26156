@@ -1,0 +1,2 @@
+<13>Sep 26 10:24:01 edge01 app: bytes=999999999999999999999999 src=10.10.10.10 dst=203.0.113.9 src_port=65535 dst_port=1 msg="extreme numeric value preserved as raw field"
+<13>Sep 26 10:24:02 edge01 app: bytes=-999999999999999999999999 src=10.10.10.11 dst=203.0.113.10 src_port=99999 dst_port=0 msg="invalid port should not crash pipeline"

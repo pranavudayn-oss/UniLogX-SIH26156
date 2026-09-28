@@ -1,0 +1,1 @@
+class AuditModel: pass

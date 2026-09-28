@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+dist/
+.env
+backend/unilogx.db
+backend/data/raw_logs/*
+backend/data/normalized_logs/*
+backend/data/quarantine/*
+backend/data/exports/*
+!backend/data/**/.gitkeep

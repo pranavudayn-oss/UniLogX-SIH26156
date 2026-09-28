@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>UniLogX Enhanced Control</title>
+<style>
+body{font-family:Inter,system-ui,sans-serif;background:#0b1020;color:#e8edf7;margin:0;padding:32px}
+.wrap{max-width:1100px;margin:auto}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:#151c31;border:1px solid #2a3553;border-radius:14px;padding:18px}
+.big{font-size:28px;font-weight:700}.muted{color:#9ca9c7}button{background:#4f7cff;color:white;border:0;border-radius:9px;padding:10px 14px;cursor:pointer;margin-right:8px}
+button.danger{background:#c83b52}.row{display:flex;gap:10px;margin:18px 0}textarea{width:100%;height:100px;background:#0e1528;color:white;border:1px solid #33405f;border-radius:10px;padding:12px}
+pre{white-space:pre-wrap;background:#0e1528;padding:14px;border-radius:10px}.pill{display:inline-block;padding:5px 8px;border-radius:8px;background:#202b47;margin:4px}
+</style></head>
+<body><div class="wrap">
+<h1>UniLogX — Enhanced Prototype</h1>
+<p class="muted">Additive parser expansion + ML-assisted routing. Existing project files remain unchanged.</p>
+<div class="grid" id="cards"></div>
+<div class="row"><button onclick="load()">Refresh</button><button class="danger" onclick="clearData()">Clear Test Data</button></div>
+<div class="card"><h2>Parser Registry</h2><div id="parsers"></div></div>
+<div class="card" style="margin-top:14px"><h2>Test Automatic Log Classification</h2>
+<textarea id="q" placeholder='Paste one log line, e.g. {"timestamp":"...","message":"login failed","source_ip":"10.0.0.5"}'></textarea>
+<div class="row"><button onclick="classify()">Classify & Route</button></div><pre id="result">Waiting...</pre></div>
+</div>
+<script>
+async function j(url,opt){let r=await fetch(url,opt);let x=await r.json();if(!r.ok)throw new Error(x.detail||JSON.stringify(x));return x}
+async function load(){try{let m=await j('/api/v1/metrics');document.getElementById('cards').innerHTML=[
+['Events',m.total_events],['Quarantined',m.quarantined],['Parser success',m.parser_success_rate+'%'],['Parsers',Object.keys(m.parsers||{}).length]
+].map(x=>`<div class="card"><div class="muted">${x[0]}</div><div class="big">${x[1]}</div></div>`).join('');
+let p=await j('/api/v1/parsers');document.getElementById('parsers').innerHTML=p.map(x=>`<span class="pill">${x.display_name} · ${x.format}</span>`).join('')}catch(e){alert(e)}}
+async function classify(){try{let q=document.getElementById('q').value;let x=await j('/api/v1/enhanced/classify?q='+encodeURIComponent(q));document.getElementById('result').textContent=JSON.stringify(x,null,2)}catch(e){document.getElementById('result').textContent=e}}
+async function clearData(){if(!confirm('Clear prototype events, quarantine records and generated test storage?'))return;try{let x=await j('/api/v1/enhanced/clear-test-data?confirm=true',{method:'POST'});alert(JSON.stringify(x));load()}catch(e){alert(e)}}
+load()
+</script></body></html>

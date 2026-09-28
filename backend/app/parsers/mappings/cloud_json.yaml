@@ -1,0 +1,6 @@
+source: cloud_json
+fields:
+  eventTime: timestamp
+  sourceIPAddress: source_ip
+  eventName: action
+  userIdentity: user

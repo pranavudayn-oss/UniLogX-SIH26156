@@ -1,0 +1,2 @@
+<34>Sep 26 10:23:10 firewall01 sshd[1234]: Failed password for admin from 198.51.100.7 port 44221
+<13>Sep 26 10:23:15 app01 web[884]: Login successful for user=analyst

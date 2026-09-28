@@ -1,0 +1,2 @@
+PS C:\Users\prana\OneDrive\Attachments\Desktop\UniLogX_MVP_Prototype_Enhanced\UniLogX_MVP_Prototype\backend> .\.venv\Scripts\Activate.ps1
+(.venv) PS C:\Users\prana\OneDrive\Attachments\Desktop\UniLogX_MVP_Prototype_Enhanced\UniLogX_MVP_Prototype\backend> python run_enhanced.py
