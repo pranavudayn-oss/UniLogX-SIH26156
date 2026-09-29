@@ -1,7 +1,9 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api/v1', timeout: 30000 })
-
+const api = axios.create({
+  baseURL: 'https://unilogx-sih26156.onrender.com/api/v1',
+  timeout: 30000
+})
 export const getMetrics = () => api.get('/metrics').then(r => r.data)
 export const getEvents = (params = {}) => api.get('/events', { params }).then(r => r.data)
 export const getEvent = id => api.get(`/events/${id}`).then(r => r.data)
