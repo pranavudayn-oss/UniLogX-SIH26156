@@ -130,3 +130,18 @@ app.include_router(events_router, prefix="/api/v1")
 app.include_router(metrics_router, prefix="/api/v1")
 app.include_router(parsers_router, prefix="/api/v1")
 app.include_router(quarantine_router, prefix="/api/v1")
+
+from pathlib import Path
+from fastapi.responses import FileResponse
+from fastapi import HTTPException
+
+@app.get("/UniLogX-Sample-Logs.zip", include_in_schema=False)
+def download_sample_logs():
+    for candidate in [
+        Path(__file__).resolve().parents[2] / "frontend" / "public" / "UniLogX-Sample-Logs.zip",
+        Path(__file__).resolve().parents[2] / "sample_logs" / "UniLogX-Sample-Logs.zip",
+    ]:
+        if candidate.exists():
+            return FileResponse(candidate, filename="UniLogX-Sample-Logs.zip", media_type="application/zip")
+    raise HTTPException(404, "Sample logs zip not found")
+

@@ -5,6 +5,7 @@ import AnalyticsCharts from '../components/AnalyticsCharts'
 import EventTable from '../components/EventTable'
 import EventDetailsModal from '../components/EventDetailsModal'
 import UploadPanel from '../components/UploadPanel'
+import SampleLogsCard from '../components/SampleLogsCard'
 
 export default function Dashboard({ refresh }) {
   const [m, setM] = useState(null)
@@ -40,7 +41,10 @@ export default function Dashboard({ refresh }) {
       {/* 1. TOP METRIC CARDS */}
       <MetricsCards metrics={m} />
 
-      {/* 2. LOG INGESTION DROPZONE */}
+      {/* 2. SAMPLE LOGS / JUDGE TESTING KIT */}
+      <SampleLogsCard />
+
+      {/* 3. LOG INGESTION DROPZONE */}
       <UploadPanel onDone={loadData} />
 
       {/* 3. OPERATIONAL ANALYTICS VISUALIZATIONS */}

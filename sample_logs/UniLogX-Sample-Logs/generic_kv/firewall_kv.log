@@ -1,0 +1,10 @@
+CEF:0|Fortinet|FortiGate|v6.4.5|traffic:forward|Forward traffic|3|src=192.168.1.50 dst=203.0.113.25 spt=52140 dpt=443 proto=TCP act=allow
+CEF:0|PaloAlto|PAN-OS|10.1.0|threat|Vulnerability detected|7|src=198.51.100.60 dst=192.168.1.10 spt=41234 dpt=80 proto=TCP act=deny
+date=2026-09-28 time=10:15:01 devname=FW-HQ-01 logid=0000000013 type=traffic subtype=forward srcip=192.168.1.100 dstip=198.51.100.80 srcport=49812 dstport=80 proto=6 action=accept
+date=2026-09-28 time=10:15:05 devname=FW-HQ-01 logid=0000000020 type=traffic subtype=local srcip=198.51.100.110 dstip=192.168.1.1 srcport=61244 dstport=22 proto=6 action=deny
+CEF:0|Checkpoint|SmartDefense|R80|drop|IPS Drop Alert|8|src=203.0.113.12 dst=192.168.1.8 spt=58912 dpt=445 proto=TCP act=drop
+timestamp="2026-09-28T10:15:15Z" vendor="Juniper" device="SRX300" src_ip=192.168.10.4 dst_ip=203.0.113.44 service=HTTPS action=permit
+timestamp="2026-09-28T10:15:20Z" vendor="Juniper" device="SRX300" src_ip=198.51.100.31 dst_ip=192.168.10.5 service=SSH action=reject
+CEF:0|F5|BIG-IP|15.1.0|asm|Web Application Firewall Violation|6|src=198.51.100.72 dst=192.168.1.15 spt=38190 dpt=443 proto=TCP act=block
+time="10:15:30" host="proxy-01" client_ip=192.168.1.88 target_ip=203.0.113.19 target_port=8080 filter_result=DENIED cat="Suspicious Site"
+CEF:0|Cisco|Firepower|7.0|intrusion|SQL Injection Attempt|9|src=198.51.100.99 dst=192.168.1.20 spt=51290 dpt=3306 proto=TCP act=drop

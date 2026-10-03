@@ -1,0 +1,10 @@
+[**] [1:1000001:2] Snort Alert: Potential Port Scan Detected [**] [Classification: Reconnaissance] [Priority: 3] 198.51.100.15:45210 -> 192.168.1.1:80
+[**] [1:1000002:1] Snort Alert: ET EXPLOIT MS08-067 SMB Remote Execution [**] [Priority: 1] 198.51.100.44:31245 -> 192.168.1.20:445
+[**] [1:1000003:4] Snort Alert: ET MALWARE User-Agent Known Bad [**] [Priority: 2] 192.168.1.65:50122 -> 203.0.113.88:80
+[**] [1:1000004:1] Snort Alert: ET WEB_SPECIFIC_APPS Directory Traversal [**] [Priority: 2] 198.51.100.78:55120 -> 192.168.1.10:80
+[**] [1:1000005:2] Snort Alert: ICMP Large Ping Flood Attempt [**] [Priority: 3] 198.51.100.99 -> 192.168.1.1
+[**] [1:1000006:3] Snort Alert: ET SCAN Nmap Scripting Engine Probe [**] [Priority: 2] 198.51.100.22:48110 -> 192.168.1.15:443
+[**] [1:1000007:1] Snort Alert: ET EXPLOIT Log4j JNDI Lookup Attempt [**] [Priority: 1] 198.51.100.67:59123 -> 192.168.1.25:8080
+[**] [1:1000008:2] Snort Alert: Suspicious Outbound RDP Connection [**] [Priority: 2] 192.168.1.110:53210 -> 203.0.113.41:3389
+[**] [1:1000009:1] Snort Alert: ET DOS Potential SYN Flood Attack [**] [Priority: 1] 198.51.100.5:12400 -> 192.168.1.5:443
+[**] [1:1000010:3] Snort Alert: Sensitive Data Exfiltration Pattern Detected [**] [Priority: 2] 192.168.1.88:51442 -> 203.0.113.90:443

@@ -1,0 +1,10 @@
+2026-09-28T11:00:01Z,192.168.1.20,198.51.100.10,login_attempt,success,Interactive user login accepted,alice_ops,low
+2026-09-28T11:00:05Z,198.51.100.45,192.168.1.5,ssh_connect,failure,SSH authentication failed bad credentials,root,high
+2026-09-28T11:00:10Z,192.168.1.35,203.0.113.88,file_transfer,success,Secure FTP document transfer completed,bob_finance,informational
+2026-09-28T11:00:15Z,198.51.100.99,192.168.1.8,port_probe,failure,Firewall dropped unsolicited SYN packet,unknown,medium
+2026-09-28T11:00:20Z,192.168.1.50,10.0.0.12,dns_lookup,success,Internal domain name resolution succeeded,system_agent,low
+2026-09-28T11:00:25Z,192.168.1.75,198.51.100.30,database_query,success,Read query on telemetry table executed,analyst_user,informational
+2026-09-28T11:00:30Z,198.51.100.12,192.168.1.15,waf_blocked,failure,SQL injection pattern intercepted by filter,attacker_ip,critical
+2026-09-28T11:00:35Z,192.168.1.90,203.0.113.40,vpn_session,success,Virtual private network tunnel established,remote_worker,low
+2026-09-28T11:00:40Z,192.168.1.105,10.0.0.25,config_update,success,Router access control list updated,network_admin,medium
+2026-09-28T11:00:45Z,198.51.100.81,192.168.1.22,brute_force,failure,Multiple failed authentication attempts detected,hacker,high

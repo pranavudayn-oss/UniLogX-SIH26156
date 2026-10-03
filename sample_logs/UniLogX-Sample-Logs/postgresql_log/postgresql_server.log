@@ -1,0 +1,10 @@
+2026-09-28 10:55:01 UTC [1801] postgres: LOG: database system was shut down at 2026-09-28 10:54:30 UTC
+2026-09-28 10:55:05 UTC [1805] postgresql: LOG: connection received: host=192.168.1.10 port=51240
+2026-09-28 10:55:10 UTC [1805] postgresql: LOG: connection authorized: user=app_user database=production
+2026-09-28 10:55:15 UTC [1810] postgresql: ERROR: password authentication failed for user=dbadmin from 198.51.100.14
+2026-09-28 10:55:20 UTC [1812] postgres: FATAL: no pg_hba.conf entry for host "198.51.100.88", user "postgres", database "unilogx", SSL off
+2026-09-28 10:55:25 UTC [1815] postgresql: STATEMENT: SELECT * FROM audit_logs WHERE created_at > NOW() - INTERVAL '1 day'
+2026-09-28 10:55:30 UTC [1820] postgresql: ERROR: relation "users_temp" does not exist at character 15 user=analyst
+2026-09-28 10:55:35 UTC [1822] postgresql: LOG: disconnection: session time: 0:05:12.301 user=app_user database=production host=192.168.1.10 port=51240
+2026-09-28 10:55:40 UTC [1825] postgres: FATAL: terminating connection due to administrator command user=batch_worker
+2026-09-28 10:55:45 UTC [1828] postgresql: LOG: checkpoint starting: time

@@ -1,0 +1,10 @@
+Sep 28 10:35:01 bastion01 sshd[12044]: Accepted publickey for secops from 192.168.1.50 port 52140 ssh2
+Sep 28 10:35:05 bastion01 sshd[12048]: Failed password for invalid user hacker from 198.51.100.22 port 43110 ssh2
+Sep 28 10:35:10 bastion01 sshd[12052]: Failed password for root from 198.51.100.45 port 51244 ssh2
+Sep 28 10:35:15 db-master01 sudo[14201]: analyst : TTY=pts/1 ; PWD=/home/analyst ; USER=root ; COMMAND=/bin/systemctl restart mysql
+Sep 28 10:35:20 bastion01 sshd[12060]: Accepted password for deployer from 192.168.1.80 port 49102 ssh2
+Sep 28 10:35:25 app-node02 sudo[15122]: devops : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/tail -f syslog
+Sep 28 10:35:30 bastion01 sshd[12068]: Failed password for invalid user admin from 203.0.113.66 port 39820 ssh2
+Sep 28 10:35:35 db-master01 sudo[14210]: analyst : authentication failure ; logname=analyst uid=1001 euid=0 tty=/dev/pts/1
+Sep 28 10:35:40 web-prod01 sshd[18902]: Accepted publickey for jenkins_runner from 192.168.1.95 port 42100 ssh2
+Sep 28 10:35:45 bastion01 sshd[12080]: Failed password for invalid user test from 198.51.100.91 port 48201 ssh2

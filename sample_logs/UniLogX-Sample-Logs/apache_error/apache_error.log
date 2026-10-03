@@ -1,0 +1,10 @@
+[Mon Sep 28 10:40:01.123456 2026] [error] [client 192.168.1.100:54210] AH00124: Request exceeded the limit of 10 internal redirects due to configuration error
+[Mon Sep 28 10:40:05.234567 2026] [error] [client 198.51.100.24:43120] AH01630: client denied by server configuration: /var/www/html/restricted
+[Mon Sep 28 10:40:10.345678 2026] [error] [client 198.51.100.55:51200] AH01276: Cannot serve directory /var/www/html/uploads/: No matching DirectoryIndex found
+[Mon Sep 28 10:40:15.456789 2026] [error] [client 192.168.1.80:39810] AH00035: access to /index.php denied because search permissions are missing on a component of the path
+[Mon Sep 28 10:40:20.567890 2026] [error] [client 198.51.100.77:48920] AH01757: user dbadmin: authentication failure for "/admin": Password Mismatch
+[Mon Sep 28 10:40:25.678901 2026] [error] [client 203.0.113.88:55140] AH00135: Invalid method in request \x16\x03\x01 to plain HTTP listener
+[Mon Sep 28 10:40:30.789012 2026] [error] [client 192.168.1.45:49112] AH02032: Hostname provided via SNI and hostname provided via HTTP do not match
+[Mon Sep 28 10:40:35.890123 2026] [error] [client 198.51.100.91:52130] AH00543: FastCGI server sent invalid response header: premature script headers
+[Mon Sep 28 10:40:40.901234 2026] [error] [client 192.168.1.66:47210] AH01618: user 'guest' not found: /api/v1/secure/metrics
+[Mon Sep 28 10:40:45.012345 2026] [error] [client 198.51.100.12:60120] AH00082: File does not exist: /var/www/html/favicon.ico

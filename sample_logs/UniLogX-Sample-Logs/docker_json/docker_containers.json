@@ -1,0 +1,10 @@
+{"log":"2026-09-28T10:45:01Z [INFO] API Gateway service booted successfully on port 8080\n","stream":"stdout","time":"2026-09-28T10:45:01.123456789Z"}
+{"log":"2026-09-28T10:45:05Z [WARN] Cache connection pool reaching 85% capacity\n","stream":"stderr","time":"2026-09-28T10:45:05.234567890Z"}
+{"log":"2026-09-28T10:45:10Z [ERROR] Failed to connect to payment microservice timeout after 5000ms\n","stream":"stderr","time":"2026-09-28T10:45:10.345678901Z"}
+{"log":"2026-09-28T10:45:15Z [INFO] Worker container processed job id 44101 in 210ms\n","stream":"stdout","time":"2026-09-28T10:45:15.456789012Z"}
+{"log":"2026-09-28T10:45:20Z [INFO] Database migration step 14 completed without error\n","stream":"stdout","time":"2026-09-28T10:45:20.567890123Z"}
+{"log":"2026-09-28T10:45:25Z [WARN] TLS handshake aborted by client peer 198.51.100.14\n","stream":"stderr","time":"2026-09-28T10:45:25.678901234Z"}
+{"log":"2026-09-28T10:45:30Z [INFO] Container health check responding 200 OK\n","stream":"stdout","time":"2026-09-28T10:45:30.789012345Z"}
+{"log":"2026-09-28T10:45:35Z [ERROR] Out of memory allocation failure in background sync worker\n","stream":"stderr","time":"2026-09-28T10:45:35.890123456Z"}
+{"log":"2026-09-28T10:45:40Z [INFO] Received SIGTERM signal gracefully closing listeners\n","stream":"stdout","time":"2026-09-28T10:45:40.901234567Z"}
+{"log":"2026-09-28T10:45:45Z [INFO] Container shutdown complete exit code 0\n","stream":"stdout","time":"2026-09-28T10:45:45.012345678Z"}

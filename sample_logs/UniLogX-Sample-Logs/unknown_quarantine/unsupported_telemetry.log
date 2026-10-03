@@ -1,0 +1,5 @@
+MODBUS_TELEMETRY: coil_state 0x0F holding_reg 0x12A0 CRC_OK
+ZIGBEE_NODE_FRAME: pan_id 0x1A2B lqi 45 rssi -82dBm preamble valid
+PROPRIETARY_SCADA_EVENT: station Substation-4 turbine_rpm 1800 vibration normal
+UNKNOWN_SENSOR_BURST: sensor temp_celsius val 23.4 unit degC
+CANBUS_FRAME: id 0x18FEF100 len 8 d 00 12 34 56 78 9A BC DE

@@ -1,0 +1,10 @@
+2026-09-28T10:50:01.123456Z 1 [System] [MY-010116] [Server] mysqld: ready for connections. Version: '8.0.32' socket: '/tmp/mysql.sock' port: 3306
+2026-09-28T10:50:05.234567Z 15 [Warning] [MY-010055] [Server] mysqld: Access denied for user 'dbadmin'@'192.168.1.55' (using password: YES)
+2026-09-28T10:50:10.345678Z 16 [Note] [MY-010914] [Server] mysqld: Got an error reading communication packets from connection 192.168.1.80
+2026-09-28T10:50:15.456789Z 18 [Warning] [MY-010909] [Server] mysqld: Aborted connection 18 to db: 'unilogx' user: 'app_user' host: '192.168.1.92' (Got timeout reading communication packets)
+2026-09-28T10:50:20.567890Z 20 [Note] [MY-010051] [Server] mysqld: Connection open user=analyst from 192.168.1.44
+2026-09-28T10:50:25.678901Z 22 [ERROR] [MY-010262] [Server] mysqld: Table './unilogx/events' is marked as crashed and should be repaired
+2026-09-28T10:50:30.789012Z 24 [Warning] [MY-010055] [Server] mysqld: Access denied for user 'root'@'198.51.100.5' (using password: NO)
+2026-09-28T10:50:35.890123Z 25 [Note] [MY-010051] [Server] mysqld: Connection established user=backup_svc from 192.168.1.2
+2026-09-28T10:50:40.901234Z 28 [ERROR] [MY-011953] [Server] mysqld: Error occurred while reading binary log position
+2026-09-28T10:50:45.012345Z 30 [Note] [MY-010914] [Server] mysqld: Aborted connection for user=guest from 192.168.1.66

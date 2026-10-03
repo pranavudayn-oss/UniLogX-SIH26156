@@ -1,0 +1,10 @@
+Sep 28 10:00:01 %ASA-6-302013: Built inbound TCP connection 5101 for inside:192.168.1.15/50210 to outside:203.0.113.10/443
+Sep 28 10:00:05 %ASA-4-106023: Deny tcp src inside:192.168.1.25/44120 dst outside:198.51.100.25/22 by access-group "dmz_in"
+Sep 28 10:00:10 %ASA-6-302014: Teardown TCP connection 5101 for inside:192.168.1.15/50210 to outside:203.0.113.10/443 duration 0:00:09 bytes 4310 TCP FINs
+Sep 28 10:00:15 %ASA-6-302015: Built outbound UDP connection 5102 for outside:198.51.100.50/53 to inside:192.168.1.10/53300
+Sep 28 10:00:20 %ASA-4-106023: Deny udp src inside:192.168.1.99/5060 dst outside:203.0.113.80/5060 by access-group "outside_acl"
+Sep 28 10:00:25 %ASA-6-302013: Built inbound TCP connection 5103 for inside:192.168.1.30/49152 to outside:203.0.113.55/80
+Sep 28 10:00:30 %ASA-5-111008: User 'secadmin' executed the 'show running-config' command
+Sep 28 10:00:35 %ASA-6-302016: Teardown UDP connection 5102 for outside:198.51.100.50/53 to inside:192.168.1.10/53300 duration 0:00:02 bytes 142
+Sep 28 10:00:40 %ASA-4-106023: Deny tcp src outside:198.51.100.90/61234 dst inside:192.168.1.5/3389 by access-group "perimeter_filter"
+Sep 28 10:00:45 %ASA-6-302013: Built inbound TCP connection 5104 for inside:192.168.1.45/54311 to outside:203.0.113.99/443

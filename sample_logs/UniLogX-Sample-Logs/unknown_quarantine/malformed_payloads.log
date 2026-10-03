@@ -1,0 +1,5 @@
+SYSTEM_HALT: core dump at 0xDEADBEEF register dump unavailable
+BINARY_PAYLOAD: \x00\x01\x02\x03\xFF\xFE\xFD non-standard telemetry chunk
+MAINFRAME-SYS-MSG: JOB49200 STEP3 COND CODE 0016 ABEND S0C4
+BGP-PEER-UPDATE: neighbor AS65001 state changed Active to Idle
+FIRMWARE_CRASH: kernel panic without standard traceback architecture unknown

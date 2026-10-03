@@ -1,0 +1,10 @@
+<34>Sep 28 10:10:01 perimeter-fw01 kernel: packet dropped on interface eth0 from 198.51.100.44
+<13>Sep 28 10:10:05 srv-app-01 systemd[1]: Started Security Monitoring Agent Service.
+<85>Sep 28 10:10:10 core-sw01 Interface GigabitEthernet0/2 link status changed to UP
+<37>Sep 28 10:10:15 edge-vpn01 openvpn[4120]: Peer connection initiated with 203.0.113.111
+<30>Sep 28 10:10:20 dns-primary named[1042]: network unreachable resolving domain org/DNSKEY/IN
+<14>Sep 28 10:10:25 backup-srv crond[8812]: (root) CMD (/usr/local/bin/volume-sync.sh >/dev/null)
+<38>Sep 28 10:10:30 ntp-server ntpd[912]: frequency error 512 PPM exceeds tolerance 500 PPM
+<86>Sep 28 10:10:35 dist-switch02 Spanning tree topology change detected on port Fa0/12
+<11>Sep 28 10:10:40 mail-relay postfix/smtpd[5541]: connect from mail-out.partner.net[203.0.113.77]
+<35>Sep 28 10:10:45 ldap-master slapd[2102]: syncprov_sendinfo: cookie=rid=001,sid=002
